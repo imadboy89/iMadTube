@@ -1,0 +1,15 @@
+<html>
+
+</html>
+<script type="text/javascript" src="jQuery_1.9.js"></script>
+<script type="text/javascript" src="func.js"></script>
+<script>
+$(document).ready(function(){
+urls = getDownlaods("i49IQbSNW80");
+
+$("html").html(urls[0]["title"]);
+aa = "<br><br><a href='"+urls[1][0]["url"]+"'>download</a>";
+$("html").append(aa);
+
+});
+</script>
