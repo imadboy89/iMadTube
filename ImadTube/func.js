@@ -1,5 +1,8 @@
 ﻿
-function getDownlaods(vid){
+function getDownlaods(vid_link){
+    resss = /watch\?v=([^\s&]+)/.exec(vid_link);
+    if ( resss.length != 2 ) return 0;
+    vid = resss[1];
     geturls(vid);
     return resultat_downloads;
 }
